@@ -96,4 +96,9 @@ if (sum[6] > sum[7]) {
   type += "?";
 }
 
+// set the type in the html
 document.getElementById("MBTI_type").innerHTML = type;
+// show the logged in div in the html
+document.getElementById("logged_in").style.display = "block";
+// hide the login div in the html
+document.getElementById("logged_out").style.display = "none";

@@ -4,13 +4,25 @@
 
 <head>
   <title>STEEDS</title>
-  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <script>
-    document.write('<a href="' + url + '">Login</a>');
-  </script>
+  <script src="authentication.js"></script>
+
+  <div id="logged_out">
+    <script>
+      document.write('<a href="' + url + '"><button>Login</button></a>');
+    </script>
+  </div>
+  
+  <div id="logged_in">
+    <h1>Your type is: </h1>
+    <h2 id="MBTI_type"></h2>
+    <a href=""><button>Home</button></a>
+  </div>
+  
+  <script src="calculate_type.js"></script>
 </body>
 
 </html>
