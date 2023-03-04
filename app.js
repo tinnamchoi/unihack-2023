@@ -11,7 +11,7 @@ function generateRandomString(length) {
 };
 
 var client_id = 'f92fd28be38945ba94229da71cd26566';
-var redirect_uri = 'http://localhost:8080/callback';
+var redirect_uri = 'http://tinnamchoi.github.io/unihack-2023/callback';
 
 var state = generateRandomString(16);
 
