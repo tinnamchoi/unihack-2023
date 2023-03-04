@@ -16,7 +16,7 @@ var redirect_uri = 'http://localhost:8080/callback';
 var state = generateRandomString(16);
 
 localStorage.setItem(stateKey, state);
-var scope = 'user-read-private user-read-email';
+var scope = 'playlist-read-private';
 
 var url = 'https://accounts.spotify.com/authorize';
 url += '?response_type=token';
