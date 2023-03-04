@@ -11,6 +11,7 @@
     line-height: 116px;
     
     color: #000000;
+    animation: load 1s;
 }
 
 .play-box{
@@ -100,6 +101,7 @@
     line-height: 100px;
 
     color: #000000;
+    animation: load 1s;
 }
 
 .mbti{ 
@@ -117,4 +119,30 @@
     /* identical to box height */
 
     color: #000000;
+    animation: mbti-load 3s;
+}
+
+@keyframes load{ 
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100%{
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mbti-load{
+  0%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  90%{
+    opacity: 0;
+    visibility: visible;
+  }
+  100%{
+    opacity: 1;
+  }
 }
