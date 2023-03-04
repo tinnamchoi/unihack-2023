@@ -9,7 +9,7 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <h1 class="title">1. What do you think of this song?</h1>
+    <h1 class="title">1. Do you enjoy this genre?</h1>
 
     <div class="play-box">
         <audio id="my-audio" controls autoplay>
@@ -18,9 +18,9 @@
         </audio>
     </div>
 
-    <button class="button yes-button" onclick="changePage(1)">Yes</button>
-    <button class="button neutral-button" onclick="changePage(0)">Neutral</button>
-    <button class="button no-button" onclick="changePage(-1)">No</button>
+    <button class="button yes-button" onclick="changePage('T')">Yes</button>
+    <button class="button neutral-button" onclick="changePage(' ')">Neutral</button>
+    <button class="button no-button" onclick="changePage('F')">No</button>
 
 </body>
 </html>
