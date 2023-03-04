@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1 class="title">1. What do you think of this song?</h1>
+
+    <div class="play-box">
+        <audio id="my-audio" controls autoplay>
+            <source src="https://d1fqjpzwgmzkf8.cloudfront.net/Otis.mp3" type="audio/mpeg">
+            browser can't display the audio file
+        </audio>
+    </div>
+
+    <button class="button yes-button" onclick="changePage(1)">Yes</button>
+    <button class="button neutral-button" onclick="changePage(0)">Neutral</button>
+    <button class="button no-button" onclick="changePage(-1)">No</button>
+
+</body>
+</html>
