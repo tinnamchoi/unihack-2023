@@ -1,5 +1,5 @@
 var client_id = 'f92fd28be38945ba94229da71cd26566';
-var redirect_uri = 'http://localhost:8080/';
+var redirect_uri = window.location.href;
 var scope = 'playlist-read-private user-top-read';
 var url = 'https://accounts.spotify.com/authorize';
 
