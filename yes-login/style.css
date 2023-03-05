@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap);
+
 #logged_out,
 #logged_in {
   display: table;
@@ -14,15 +16,46 @@
 
 body {
   background-color: blanchedalmond;
+  font-family: 'Inter';
+  font-style: normal;
 }
 
 .content {
-  padding-bottom: 128px;
+  padding-bottom: 64px;
 }
 
 center {
   display: table-cell;
   vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  font-weight:900;
+  background-color: dimgrey;
+  color: #FFFFFF;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: white;}
+tr:nth-child(odd){background-color: lightgray;}
+
+h1 {
+  font-weight: 400;
+  font-size: 96px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 155px;
 }
 
 button {
