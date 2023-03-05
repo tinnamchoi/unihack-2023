@@ -69,7 +69,7 @@ function getResult() {
     // Get MBTI score
     var mbti = getMBTI(results)
     localStorage.setItem("result", mbti)
-    window.location.href = "/no-login/result.html"
+    window.location.href = "result.html"
 }
 
 // sam's algorithm
