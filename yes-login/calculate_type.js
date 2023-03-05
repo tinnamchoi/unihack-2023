@@ -98,6 +98,10 @@ if (hash != "") {
   }
 
   document.getElementById("MBTI_type").innerHTML = type;
+  document.getElementById("E_I").innerHTML = "E: " + Math.round(sum[0] / (sum[0] + sum[1]) * 100) + "%, I: " + Math.round(sum[1] / (sum[0] + sum[1]) * 100) + "%";
+  document.getElementById("N_S").innerHTML = "N: " + Math.round(sum[2] / (sum[2] + sum[3]) * 100) + "%, S: " + Math.round(sum[3] / (sum[2] + sum[3]) * 100) + "%";
+  document.getElementById("T_F").innerHTML = "T: " + Math.round(sum[4] / (sum[4] + sum[5]) * 100) + "%, F: " + Math.round(sum[5] / (sum[4] + sum[5]) * 100) + "%";
+  document.getElementById("J_P").innerHTML = "J: " + Math.round(sum[6] / (sum[6] + sum[7]) * 100) + "%, P: " + Math.round(sum[7] / (sum[6] + sum[7]) * 100) + "%";
   document.getElementById("logged_in").style.display = "block";
   document.getElementById("logged_out").style.display = "none";
 }
