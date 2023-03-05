@@ -2,9 +2,11 @@
 
 body {
   background-color: blanchedalmond;
+  color: white;
   font-family: 'Inter';
   font-style: normal;
   text-align: center;
+  background: url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
 h1 {

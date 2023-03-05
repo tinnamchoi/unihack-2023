@@ -18,6 +18,8 @@ body {
   background-color: blanchedalmond;
   font-family: 'Inter';
   font-style: normal;
+  color: white;
+  background: url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
 .content {
@@ -31,6 +33,7 @@ center {
 
 table {
   border-collapse: collapse;
+  color: black;
 }
 
 th {
