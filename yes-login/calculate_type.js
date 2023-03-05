@@ -114,10 +114,15 @@ if (hash != "") {
   }
 
   document.getElementById("MBTI_type").innerHTML = type;
-  document.getElementById("E_I").innerHTML = "E: " + Math.round(sum[0] / (sum[0] + sum[1]) * 100) + "%, I: " + Math.round(sum[1] / (sum[0] + sum[1]) * 100) + "%";
-  document.getElementById("N_S").innerHTML = "N: " + Math.round(sum[2] / (sum[2] + sum[3]) * 100) + "%, S: " + Math.round(sum[3] / (sum[2] + sum[3]) * 100) + "%";
-  document.getElementById("T_F").innerHTML = "T: " + Math.round(sum[4] / (sum[4] + sum[5]) * 100) + "%, F: " + Math.round(sum[5] / (sum[4] + sum[5]) * 100) + "%";
-  document.getElementById("J_P").innerHTML = "J: " + Math.round(sum[6] / (sum[6] + sum[7]) * 100) + "%, P: " + Math.round(sum[7] / (sum[6] + sum[7]) * 100) + "%";
-  document.getElementById("logged_in").style.display = "block";
+  // set the values of id E_val, I_val etc to the percentages rounded to 2 decimal places
+  document.getElementById("E_val").innerHTML = Math.round(sum[0] / (sum[0] + sum[1]) * 10000) / 100 + "%";
+  document.getElementById("I_val").innerHTML = Math.round(sum[1] / (sum[0] + sum[1]) * 10000) / 100 + "%";
+  document.getElementById("N_val").innerHTML = Math.round(sum[2] / (sum[2] + sum[3]) * 10000) / 100 + "%";
+  document.getElementById("S_val").innerHTML = Math.round(sum[3] / (sum[2] + sum[3]) * 10000) / 100 + "%";
+  document.getElementById("T_val").innerHTML = Math.round(sum[4] / (sum[4] + sum[5]) * 10000) / 100 + "%";
+  document.getElementById("F_val").innerHTML = Math.round(sum[5] / (sum[4] + sum[5]) * 10000) / 100 + "%";
+  document.getElementById("J_val").innerHTML = Math.round(sum[6] / (sum[6] + sum[7]) * 10000) / 100 + "%";
+  document.getElementById("P_val").innerHTML = Math.round(sum[7] / (sum[6] + sum[7]) * 10000) / 100 + "%";
+  document.getElementById("logged_in").style.display = "table";
   document.getElementById("logged_out").style.display = "none";
 }
